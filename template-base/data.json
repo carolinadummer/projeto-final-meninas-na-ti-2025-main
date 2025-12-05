@@ -1,0 +1,28 @@
+[
+  {
+    "titulo": "Ração Premium para Cães",
+    "descricao": "Ração super premium desenvolvida para garantir a saúde, energia e pelagem brilhante do seu melhor amigo.",
+    "imagem": "https://via.placeholder.com/400x300/667eea/ffffff?text=Racao+Cães"
+  },
+  {
+    "titulo": "Brinquedo Mordedor Durável",
+    "descricao": "Brinquedo resistente ideal para cães de todos os portes, ajudando no alívio do estresse e saúde dental.",
+    "imagem": "https://via.placeholder.com/400x300/764ba2/ffffff?text=Brinquedo+Pet"
+  },
+  {
+    "titulo": "Coleira Antipulgas",
+    "descricao": "Coleira protetora que mantém seu pet livre de pulgas e carrapatos por até 8 meses. Segura e confortável.",
+    "imagem": "https://via.placeholder.com/400x300/f093fb/ffffff?text=Coleira+Antipulgas"
+  },
+  {
+    "titulo": "Cama Macia para Pets",
+    "descricao": "Caminha acolchoada e super confortável para garantir noites tranquilas ao seu pet.",
+    "imagem": "https://via.placeholder.com/400x300/4facfe/ffffff?text=Cama+para+Pets"
+  },
+  {
+    "titulo": "Banho e Tosa Completo",
+    "descricao": "Serviço profissional com hidratação, shampoo especial, corte de unhas e finalização com perfuminho.",
+    "imagem": "https://via.placeholder.com/400x300/00f2fe/ffffff?text=Banho+e+Tosa"
+  }
+]
+

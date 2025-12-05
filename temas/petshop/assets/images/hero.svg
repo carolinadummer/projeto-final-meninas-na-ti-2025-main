@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900' preserveAspectRatio='xMidYMid slice'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1'>
+      <stop offset='0' stop-color='#02204a'/>
+      <stop offset='1' stop-color='#1E6FFF'/>
+    </linearGradient>
+    <style>text{font-family:Nunito,Arial,sans-serif;fill:#fff}</style>
+  </defs>
+  <rect width='100%' height='100%' fill='url(#g)' />
+  <g transform='translate(80,160)'>
+    <text x='0' y='0' font-size='64' font-weight='700'>Pet Amor</text>
+    <text x='0' y='90' font-size='36'>Cuidamos do seu pet com carinho e profissionalismo</text>
+  </g>
+  <g transform='translate(1100,300)'>
+    <circle cx='0' cy='0' r='140' fill='rgba(255,255,255,0.08)' />
+    <path d='M-40 -20c20-30 70-30 90 0 20 30 10 60-20 80-30 20-70 10-90-20-20-30-10-60 20-80z' fill='#e6f2ff' opacity='0.9'/>
+  </g>
+</svg>
