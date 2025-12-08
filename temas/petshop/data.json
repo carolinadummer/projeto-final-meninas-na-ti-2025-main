@@ -1,10 +1,5 @@
 [
   {
-    "titulo": "Banho e Tosa Completo",
-    "descricao": "Serviço completo de higienização para seu pet. Inclui banho, tosa, hidratação e corte de unhas.",
-    "imagem": "assets/images/banho e tosa.jpg"
-  },
-  {
     "titulo": "Ração Premium Cães",
     "descricao": "Ração super premium para cães adultos. Ingredientes naturais e balanceados para saúde completa.",
     "imagem": "assets/images/ração premium cães.webp"
@@ -13,11 +8,6 @@
     "titulo": "Brinquedos Interativos",
     "descricao": "Brinquedos inteligentes que estimulam a mente do seu pet. Perfeito para diversão e exercício.",
     "imagem": "assets/images/brinquedos interativos.jpg"
-  },
-  {
-    "titulo": "Consulta Veterinária",
-    "descricao": "Atendimento veterinário completo com profissionais qualificados. Cuidado e carinho para seu pet.",
-    "imagem": "assets/images/consulta veterinária.png"
   },
   {
     "titulo": "Ração Premium Gatos",

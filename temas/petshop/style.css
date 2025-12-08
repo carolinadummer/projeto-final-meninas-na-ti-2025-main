@@ -295,3 +295,15 @@ body {
     border-color: #8c8c8c !important; /* cinza um pouco mais escuro */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); /* leve destaque */
 }
+
+#marcarConsulta {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray !important;  /* borda chamativa */
+    cursor: pointer;
+}
+
+#marcarConsulta:checked {
+    background-color: #458fff !important;
+    border-color: #458fff !important;
+}

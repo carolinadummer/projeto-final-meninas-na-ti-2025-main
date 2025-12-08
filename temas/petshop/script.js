@@ -101,7 +101,7 @@ function configurarFormulario() {
 }
 
 // ===========================
-// 4. Scroll Suave para Links
+// 4. Scroll Suave para Links/
 // ===========================
 
 /**
@@ -149,4 +149,14 @@ document.addEventListener('DOMContentLoaded', function() {
     ativarAnimacoesScroll();
     
     console.log('Petshop carregado com sucesso! 🐶🐾');
+});
+
+document.getElementById("marcarConsulta").addEventListener("change", function() {
+    const campos = document.getElementById("consultaCampos");
+    
+    if (this.checked) {
+        campos.style.display = "block";  // Mostra os campos
+    } else {
+        campos.style.display = "none";   // Esconde os campos
+    }
 });
