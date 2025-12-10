@@ -3,8 +3,8 @@
 // ===========================
 
 /**
- * Função para carregar os produtos do arquivo data.json (produtos do petshop)
- */
+* Função para carregar os produtos do arquivo data.json (produtos do petshop)
+*/
 async function carregarProdutos() {
     try {
         const response = await fetch('data.json');
@@ -14,16 +14,18 @@ async function carregarProdutos() {
     } catch (erro) {
         console.error('Erro ao carregar produtos do petshop:', erro);
         document.getElementById('produtos-container').innerHTML = 
-            '<p class="text-center">Erro ao carregar os produtos do petshop. Verifique se o arquivo data.json existe.</p>';
+        '<p class="text-center">Erro ao carregar os produtos do petshop. Verifique se o arquivo data.json existe.</p>';
     }
 }
 
 /**
- * Função para renderizar os produtos do petshop na página
- */
+* Função para renderizar os produtos do petshop na página
+*/
 function renderizarProdutos(produtos) {
     const container = document.getElementById('produtos-container');
     container.innerHTML = '';
+    
+    const form_produtos = document.getElementById("form-produtos");
     
     produtos.forEach((produto, index) => {
         const col = document.createElement('div');
@@ -35,11 +37,37 @@ function renderizarProdutos(produtos) {
                 <div class="card-body">
                     <h5 class="card-title">${produto.titulo}</h5>
                     <p class="card-text">${produto.descricao}</p>
+                    <p class="card-text"><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
                 </div>
             </div>
         `;
         
         container.appendChild(col);
+        
+        form_produtos.innerHTML += `<div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="produto${index}">
+                            <label class="form-check-label" for="produto${index}">
+                                ${produto.titulo}
+                            </label>
+                        </div>`;
+        
+        col.addEventListener("click", () => {
+            let modalPetshop = new bootstrap.Modal(document.getElementById('modalPetshop'));
+            let modalPetshopLabel = document.querySelector('#modalPetshop .modal-title');
+            let modalPetshopBody = document.querySelector('#modalPetshop .modal-body');
+            
+            modalPetshopLabel.textContent = produto.titulo;
+            modalPetshopBody.innerHTML = `<div class="card">
+                <img src="${produto.imagem}" class="card-img-top" alt="${produto.titulo}">
+                <div class="card-body">
+                    <h5 class="card-title">${produto.titulo}</h5>
+                    <p class="card-text">${produto.descricao}</p>
+                    <p class="card-text"><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
+                </div>
+            </div>`;
+            
+            modalPetshop.show();
+        });
     });
     
     // Ativa as animações de revelação após renderizar
@@ -53,8 +81,8 @@ function renderizarProdutos(produtos) {
 // ===========================
 
 /**
- * Função para animar elementos quando aparecem no scroll
- */
+* Função para animar elementos quando aparecem no scroll
+*/
 function ativarAnimacoesScroll() {
     const elementos = document.querySelectorAll('.reveal');
     
@@ -78,8 +106,8 @@ function ativarAnimacoesScroll() {
 // ===========================
 
 /**
- * Função para lidar com o envio do formulário de contato
- */
+* Função para lidar com o envio do formulário de contato
+*/
 function configurarFormulario() {
     const formulario = document.getElementById('formulario-contato');
     
@@ -105,8 +133,8 @@ function configurarFormulario() {
 // ===========================
 
 /**
- * Adiciona scroll suave aos links de navegação
- */
+* Adiciona scroll suave aos links de navegação
+*/
 function configurarScrollSuave() {
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
@@ -133,8 +161,8 @@ function configurarScrollSuave() {
 // ===========================
 
 /**
- * Função principal que inicializa todas as funcionalidades
- */
+* Função principal que inicializa todas as funcionalidades
+*/
 document.addEventListener('DOMContentLoaded', function() {
     // Carrega os produtos do JSON (Petshop)
     carregarProdutos();
@@ -160,3 +188,4 @@ document.getElementById("marcarConsulta").addEventListener("change", function() 
         campos.style.display = "none";   // Esconde os campos
     }
 });
+

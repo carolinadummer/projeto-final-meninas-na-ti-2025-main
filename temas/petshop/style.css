@@ -46,7 +46,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #41AB5D 0%, #00441B 100%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffd700 !important;
+    color: #238845 !important;
 }
 
 /* ===========================
@@ -71,7 +71,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #41AB5D 0%, #00441B 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +87,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/images/fofinhos.png');
+
 }
 
 .hero-content {
@@ -149,7 +153,7 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #667eea;
+    color: #41AB5D;
 }
 
 .produto-card {
@@ -209,7 +213,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #41AB5D 0%, #00441B 100%);
     border: none;
     border-radius: 8px;
     padding: 12px 30px;
@@ -226,7 +230,7 @@ body {
    Footer
    =========================== */
 .footer {
-    background-color: #2c3e50;
+    background-color: #006D2C;
     color: white;
 }
 
@@ -246,7 +250,7 @@ body {
 }
 
 .footer a:hover {
-    color: #667eea;
+    color: #238845;
 }
 
 /* ===========================
@@ -296,14 +300,19 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); /* leve destaque */
 }
 
-#marcarConsulta {
+input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border: 1px solid gray !important;  /* borda chamativa */
     cursor: pointer;
 }
 
-#marcarConsulta:checked {
-    background-color: #458fff !important;
-    border-color: #458fff !important;
+input[type="checkbox"]:checked {
+    background-color: #41AB5D !important;
+    border-color: #41AB5D !important;
+}
+
+#form-produtos h6 {
+    color: #41AB5D;  /* Define a cor do texto como verde */
+    font-weight: bold;      /* Deixa o texto em negrito */
 }
